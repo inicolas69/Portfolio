@@ -275,7 +275,8 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
-    /* max-height: 60vh; */
+    max-height: 80vh;
+    /* max-width: 80vw; */
     margin: 0 auto;
 }
 
@@ -283,7 +284,7 @@ header {
     display: inline-block;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 874px) {
     .intro {
         display: grid;
         width: min-content;
