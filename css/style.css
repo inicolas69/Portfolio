@@ -7,8 +7,8 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: "Source Sans Pro", sans-serif;
-    --ff-secondary: "Source Code Pro", monospace;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Lexend Exa", sans-serif;
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -29,7 +29,7 @@
     --ts: 2px 2px 3px rgba(0, 0, 0, 0.7);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -144,9 +144,10 @@ header {
 }
 
 .logo {
-    max-width: 50px;
+    max-width: 6em;
     transition: transform 600ms ease-in-out;
     cursor: pointer;
+    margin-left: 1em;
 }
 
 .clic-logo .logo {
@@ -156,6 +157,7 @@ header {
 .nav {
     position: fixed;
     background: var(--clr-dark-2);
+    font-family: var(--ff-secondary);
     color: var(--clr-light-2);
     top: 0;
     bottom: 0;
@@ -284,7 +286,7 @@ header {
     display: inline-block;
 }
 
-@media (min-width: 874px) {
+@media (min-width: 800px) {
     .intro {
         display: grid;
         width: min-content;
@@ -363,6 +365,7 @@ header {
 
 .section__title--services {
     color: var(--clr-accent);
+    font-family: var(--ff-secondary);
     position: relative;
 }
 
@@ -406,10 +409,19 @@ header {
     margin: 0 auto;
 }
 
+.about-me__body a {
+    text-decoration: none;
+    color: var(--clr-accent);
+}
+
 .about-me__img {
     box-shadow: var(--bs);
     max-height: 60vh;
     margin: 0 auto;
+}
+
+.section__title--about {
+    font-family: var(--ff-secondary);
 }
 
 @media (min-width: 600px) {
