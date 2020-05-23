@@ -363,6 +363,12 @@ header {
     text-align: center;
 }
 
+.dev-logo {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-shadow: var(--ts);
+}
+
 .section__title--services {
     color: var(--clr-accent);
     font-family: var(--ff-secondary);
