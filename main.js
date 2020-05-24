@@ -55,7 +55,7 @@ new TypeIt('#anim', {
   startDelete: true,
   breakLines: false,
   lifeLike: true,
-  startDelay: 500,
+  startDelay: 1000,
 })
   .type(`Bonjour, moi c'est <strong>Nicolas&nbspIniesta</strong>`, {
     delay: 400,
