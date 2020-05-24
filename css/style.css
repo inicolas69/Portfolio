@@ -119,7 +119,7 @@ h3 {
 }
 
 .section__title--intro strong {
-    display: block;
+    /* display: block; */
 }
 
 .section__subtitle {
@@ -287,20 +287,27 @@ header {
 }
 
 @media (min-width: 800px) {
+
+    #anim {
+        margin-top: 0.2em;
+    }
+
     .intro {
         display: grid;
         width: min-content;
         margin: 0 auto;
-        grid-column-gap: 1em;
+        grid-column-gap: 2em;
         grid-template-areas:
             "img title"
             "img subtitle";
-        grid-template-columns: min-content max-content;
+        grid-template-columns: 15em 30em;
+        grid-template-rows: 70% 30%;
     }
 
     .intro__img {
         grid-area: img;
         min-width: 250px;
+        max-width: 15em;
         position: relative;
         z-index: 2;
     }
