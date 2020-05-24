@@ -55,6 +55,7 @@ new TypeIt('#anim', {
   startDelete: true,
   breakLines: false,
   lifeLike: true,
+  startDelay: 500,
 })
   .type(`Bonjour, moi c'est <strong>Nicolas&nbspIniesta</strong>`, {
     delay: 400,
@@ -66,7 +67,7 @@ new TypeIt('#anim', {
   .delete(3)
   .type(' M', { delay: 500, speed: 120 })
   .pause(500)
-  .delete(7, {delay: 500, speed: 120})
+  .delete(7, { delay: 500, speed: 120 })
   .type('Salut, m', { delay: 500, speed: 150 })
   .move('END', { speed: 25, delay: 400 })
   //   .delete(10)
