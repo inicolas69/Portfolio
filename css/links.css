@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Lexend Exa", sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-light-2: #fff;
+  --clr-dark: #303030;
+  --clr-dark-2: #303030;
+  --clr-accent: #fa6159;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.35em 0.35em 0.85em rgba(0, 0, 0, 0.35), 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  --ts: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 900px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+/* General styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(32, 32, 32);
+  color: var(--clr-light);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+.links-page {
+  background: var(--clr-dark);
+  text-align: center;
+  width: 800px;
+  max-width: 90%;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--bs);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-accent);
+}
+
+.links-title {
+  font-size: 4rem;
+}
